@@ -15,7 +15,7 @@ public class Lab {
      * @return the length of arr.
      */
     public int getLengthOfArray(int[] arr){
-        return 0;
+        return arr.length;
     }
 
 
@@ -27,7 +27,7 @@ public class Lab {
      * @return the element at index n of arr.
      */
     public int getNthElementOfArray(int[] arr, int n){
-        return 0;
+        return arr[n];
     }
 
     /**
@@ -39,6 +39,11 @@ public class Lab {
      * @return nothing. Because of pass-by-reference, any change to the array will be reflected across our java program.
      */
     public void setNthElementOfArray(int[] arr, int n, int val){
+       
+       //arr1 = {1 ,2,3,4}
+        arr [n] = val;
+    
+
 
     }
 
@@ -47,6 +52,10 @@ public class Lab {
      * @return a new int array that can contain n elements.
      */
     public int[] returnNewArraySizeN(int n){
-        return null;
+        //int[] arr= n;
+        return new int[n];
+
+        //int [] var = {1,3,4};
+        //int[] var1= new int[n];
     }
 }
